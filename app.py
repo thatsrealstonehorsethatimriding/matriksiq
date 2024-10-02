@@ -246,7 +246,7 @@ app = Flask(__name__)
 
 def index():
     # MatriksIQ nesnesini oluştur ve emir gönder
-    m = MatriksIQ(brokage_id="13", account_id="18095212840~100", exchange_dd=EX_OTHER)
+    m = MatriksIQ(brokage_id="13", account_id="########", exchange_dd=EX_OTHER)
     m.MarketSell("AKBNK", 1.0)
     response = m.recv()
 
